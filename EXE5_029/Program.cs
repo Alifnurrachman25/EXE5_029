@@ -22,6 +22,24 @@ namespace EXE5_029
             Rachman = null;
         }
 
+        public void insert()
+        {
+            string nm;
+            Node newnode = new Node();
+            Console.WriteLine("Masukkan element");
+            nm = Console.ReadLine();
+            newnode.name = nm;
+            newnode.next = null;
+            if (Alif == null)
+            {
+                Alif = new Node();
+                Rachman = new Node();
+                return;
+            }
+            Rachman.next = newnode;
+            Rachman = newnode;
+        }
+
     }
     internal class Program
     {
