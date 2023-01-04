@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace EXE5_029
 {
+    class Node
+    {
+        public string name;
+        public Node next;
+    }
     internal class Program
     {
         static void Main(string[] args)
