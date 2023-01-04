@@ -11,6 +11,18 @@ namespace EXE5_029
         public string name;
         public Node next;
     }
+
+    class Queue
+    {
+        Node Alif, Rachman;
+
+        public Queue()
+        {
+            Alif = null;
+            Rachman = null;
+        }
+
+    }
     internal class Program
     {
         static void Main(string[] args)
