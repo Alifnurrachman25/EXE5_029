@@ -40,6 +40,18 @@ namespace EXE5_029
             Rachman = newnode;
         }
 
+        public void delete()
+        {
+            if (Alif == null)
+            {
+                Console.WriteLine("Queue is empty !!");
+                return;
+            }
+            Alif = Alif.next;
+            if (Alif == null)
+                Rachman = null;
+        }
+
     }
     internal class Program
     {
