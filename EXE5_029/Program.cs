@@ -32,8 +32,8 @@ namespace EXE5_029
             newnode.next = null;
             if (Alif == null)
             {
-                Alif = new Node();
-                Rachman = new Node();
+                Alif = newnode;
+                Rachman = newnode;
                 return;
             }
             Rachman.next = newnode;
