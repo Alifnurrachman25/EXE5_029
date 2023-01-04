@@ -52,11 +52,42 @@ namespace EXE5_029
                 Rachman = null;
         }
 
+        public void display()
+        {
+            if (Alif == null)
+            {
+                Console.WriteLine(" Queue is empty!!");
+                return;
+            }
+            Node display;
+            for (display = Alif; display != null; display = display.next)
+                Console.WriteLine(display.name);
+        }
+
     }
     internal class Program
     {
         static void Main(string[] args)
         {
+            Queue q = new Queue();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Do insert operation");
+                    Console.WriteLine("2. Do delete operation");
+                    Console.WriteLine("3. Do Display operation");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine("Check for the values entered.");
+                }
+            }
         }
     }
 }
